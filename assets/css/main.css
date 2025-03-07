@@ -1882,9 +1882,10 @@ section,
 # tugas data Section
 --------------------------------------------------------------*/
 .konten-tugas {
-  height: 600px; /* Atur tinggi tetap */
+  /* height: 600px; Atur tinggi tetap */
   overflow: auto; /* Scroll jika kontennya lebih panjang */
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 .board {
