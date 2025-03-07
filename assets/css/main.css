@@ -1576,8 +1576,22 @@ section,
   .pagpag {
       max-width: 100% !important;
   }
+  .sampingKananKiri {
+    max-width: 100% !important;
 }
 
+}
+
+.teks-berita {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:768px){
+  .kolomPencarian {
+    margin-top: 40px;
+  }
+}
 
 .team .pageText {
   color: rgba(0, 0, 0, 0.5);
