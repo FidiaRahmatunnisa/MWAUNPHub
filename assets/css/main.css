@@ -1148,7 +1148,6 @@ section,
 --------------------------------------------------------------*/
 .features .features-item {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
-  text-align: justify;
 }
 
 .features .features-item+.features-item {
@@ -1189,6 +1188,10 @@ section,
 
 .features .features-item p:last-child {
   margin-bottom: 0;
+}
+
+.features .features-item p {
+  text-align: justify;
 }
 
 
