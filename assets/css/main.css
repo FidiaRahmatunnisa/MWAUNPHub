@@ -909,6 +909,11 @@ section,
     font-size: 28px !important; /* Pakai !important agar lebih kuat */
     font-weight: 700 !important;
   }
+  .hero .hero-logo {
+    display: block !important; /* Munculkan logo di layar kecil */
+    width: 100px; /* Atur ukuran logo */
+    margin: 0 auto 20px; /* Rata tengah dengan jarak ke bawah */
+  }
 }
 
 @media (max-width: 575px) { 
@@ -916,8 +921,10 @@ section,
     font-size: 28px !important;
     font-weight: 600 !important;
   }
+  .hero .hero-logo {
+    width: 80px; /* Ukuran lebih kecil untuk layar HP */
+  }
 }
-
 
 .hero p {
   font-size: 38px;  /*19*/
