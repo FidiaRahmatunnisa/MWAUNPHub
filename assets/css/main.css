@@ -994,6 +994,14 @@ section,
   margin-top: 50px; 
 }
 
+@media (max-width: 767px) {
+  .about .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
 .about .about-img-container {
   width: 600px; /* Atur lebar tetap */
   height: 400px; /* Atur tinggi tetap agar tetap berbentuk kotak */
