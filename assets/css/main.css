@@ -922,7 +922,7 @@ section,
     font-weight: 600 !important;
   }
   .hero .hero-logo {
-    width: 80px; /* Ukuran lebih kecil untuk layar HP */
+    width: 100px; /* Ukuran lebih kecil untuk layar HP */
   }
 }
 
