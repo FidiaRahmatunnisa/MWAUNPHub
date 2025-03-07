@@ -906,14 +906,14 @@ section,
 
 @media (max-width: 768px) { 
   .hero .container p {
-    font-size: 24px !important; /* Pakai !important agar lebih kuat */
+    font-size: 28px !important; /* Pakai !important agar lebih kuat */
     font-weight: 700 !important;
   }
 }
 
 @media (max-width: 575px) { 
   .hero .container p {
-    font-size: 20px !important;
+    font-size: 28px !important;
     font-weight: 600 !important;
   }
 }
