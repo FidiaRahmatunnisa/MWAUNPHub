@@ -964,13 +964,15 @@ section,
 @media (max-width: 768px) { 
   .about .about-img-container {
     width: 100%; /* Lebar penuh di layar kecil */
-    height: auto; /* Tinggi mengikuti aspek gambar */
+    height: 300px; /* Tinggi mengikuti aspek gambar */
+    margin-bottom: 80px;
+    border-radius: 5%;
   }
 
   .about .about-img-container img {
     width: 100%;
-    height: auto;
-    object-fit: contain; /* Pastikan gambar tidak terpotong */
+    height: 300px;
+    object-fit: cover; /* Pastikan gambar tidak terpotong */
   }
 }
 
