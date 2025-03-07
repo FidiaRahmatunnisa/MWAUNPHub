@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Tugas - MWAUNPHub</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo_baru.png" rel="icon">
+  <link href="assets/img/logo_baru.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .board {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 20px;
+    }
+    .column {
+        width: 250px;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .task {
+        background: #f8f9fa;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border-left: 4px solid #007bff;
+    }
+
+    .titleTask .card {
+    width: 100vw; /* Lebar penuh viewport */
+    max-width: 100%; /* Pastikan tidak melebar lebih dari parent */
+}
+
+</style>
+</head>
+
+<body class="services-page">
+
+  <!-- header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">MWAUNPHub</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home<br></a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a href="tugas.html" class="active">Tugas</a></li>
+          <li><a href="survei.html">Survei</a></li>
+          <li><a href="pengaduan.html">Pengaduan</a></li>
+          <li><a href="profil.html">Profil</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- konten -->
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);">
+      <div class="container position-relative">
+        <h1>Tugas</h1>
+        <p>Ruang interaktif bagi mahasiswa, dosen, dan civitas akademika untuk berbagi ide, berdiskusi, serta bertukar informasi mengenai berbagai topik akademik dan kebijakan kampus. </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Tugas</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- main kontent -->
+     <!-- title kek navbar -->
+     <div class="container mt-4 titleTask">
+      <div class="card w-100">
+          <div class="card-body d-flex justify-content-between align-items-center">
+              
+              <!-- Nama Grup + Dropdown -->
+              <div class="d-flex align-items-center gap-2">
+                  <h5 class="mb-0">Projek Kampus - Kelompok 7</h5>
+  
+                  <!-- Dropdown hanya ikon panah -->
+                  <div class="dropdown">
+                      <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="dropdown">
+                          <i class="bi bi-chevron-down"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Mahasiswa-A</a></li>
+                          <li><a class="dropdown-item" href="#">Mahasiswa-B</a></li>
+                          <li><a class="dropdown-item" href="#">Mahasiswa-C</a></li>
+                          <li><a class="dropdown-item" href="#">Mahasiswa-D</a></li>
+                      </ul>
+                  </div>
+              </div>
+  
+              <!-- Tombol Share -->
+              <button class="btn btn-primary">
+                  <i class="bi bi-send"></i> Share
+              </button>
+          </div>
+      </div>
+  </div>
+
+    <!-- mirip trello -->
+      <div class="container-fluid">
+        <div class="board">
+    
+            <!-- Add Task Column -->
+            <div class="column">
+                <h5>Add New Task</h5>
+                <input type="text" class="form-control mb-2" placeholder="Task Title">
+                <button class="btn btn-primary w-100">Add Task</button>
+            </div>
+    
+            <!-- Plan Column -->
+            <div class="column">
+                <h5>Plan</h5>
+                <div class="task">
+                    <strong>Membuat Proposal PKM</strong>
+                    <p class="text-muted">Fadhil - 10 Maret</p>
+                </div>
+                <div class="task">
+                    <strong>Riset tentang Algoritma TDOA</strong>
+                    <p class="text-muted">Rina - 12 Maret</p>
+                </div>
+            </div>
+    
+            <!-- In Progress Column -->
+            <div class="column">
+                <h5>In Progress</h5>
+                <div class="task">
+                    <strong>Pengujian Sensor Suara</strong>
+                    <p class="text-muted">Dian - 8 Maret</p>
+                </div>
+                <div class="task">
+                    <strong>Pembuatan UI Aplikasi</strong>
+                    <p class="text-muted">Budi - 9 Maret</p>
+                </div>
+            </div>
+    
+            <!-- Completed Column -->
+            <div class="column">
+                <h5>Completed</h5>
+                <div class="task">
+                    <strong>Instalasi Server AWS</strong>
+                    <p class="text-muted">Siti - 5 Maret</p>
+                </div>
+                <div class="task">
+                    <strong>Penulisan Laporan Progress</strong>
+                    <p class="text-muted">Andi - 6 Maret</p>
+                </div>
+            </div>
+    
+            <!-- Issues Column -->
+            <div class="column">
+                <h5>Issues</h5>
+                <div class="task">
+                    <strong>Koneksi Sensor Tidak Stabil</strong>
+                    <p class="text-muted">Wahyu - 7 Maret</p>
+                </div>
+                <div class="task">
+                    <strong>Kesalahan Pengolahan Data</strong>
+                    <p class="text-muted">Maya - 8 Maret</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <!-- End main kontent -->
+
+
+      <!-- komentar Section -->
+      <section id="testimonials" class="testimonials section dark-background">
+
+        <img src="assets/img/bg4.jpg" class="testimonials-bg" alt="">
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="swiper init-swiper">
+            <!-- logika bergulir -->
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <!-- konten -->
+            <div class="swiper-wrapper">
+    
+              <!-- komentar1 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/logo_unp.png" class="testimonial-img" alt="">
+                  <h3>Siti Sarah</h3>
+                  <h4>Humas UNP</h4>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The more that you read, the more things you will know, the more that you learn, the more places you’ll go – Dr. Seuss</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End komentar1 item -->
+    
+              <!-- komentar2 -->
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/logo_unp.png" class="testimonial-img" alt="">
+                  <h3>Siti Sarah</h3>
+                  <h4>Humas UNP</h4>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The more that you read, the more things you will know, the more that you learn, the more places you’ll go – Dr. Seuss</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End komentar2 item -->
+    
+               <!-- komentar3 -->
+               <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/logo_unp.png" class="testimonial-img" alt="">
+                  <h3>Siti Sarah</h3>
+                  <h4>Humas UNP</h4>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The more that you read, the more things you will know, the more that you learn, the more places you’ll go – Dr. Seuss</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End komentar3 item -->
+    
+    
+               <!-- komentar4 -->
+               <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/logo_unp.png" class="testimonial-img" alt="">
+                  <h3>Siti Sarah</h3>
+                  <h4>Humas UNP</h4>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The more that you read, the more things you will know, the more that you learn, the more places you’ll go – Dr. Seuss</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End komentar4 item -->
+    
+    
+               <!-- komentar5 -->
+               <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/logo_unp.png" class="testimonial-img" alt="">
+                  <h3>Siti Sarah</h3>
+                  <h4>Humas UNP</h4>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>The more that you read, the more things you will know, the more that you learn, the more places you’ll go – Dr. Seuss</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End komentar5 item -->
+    
+    
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+    
+        </div>
+    
+      </section><!-- /Testimonials Section -->
+    
+      <!-- Pertanyaan Section -->
+      <section id="faq" class="faq section">
+    
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up">
+            <span>Pertanyaan yang Sering Diajukan</span>
+            <h2>Pertanyaan yang Sering Diajukan</h2>
+          </div><!-- End Section Title -->
+    
+          <!-- konten -->
+          <div class="container">
+    
+            <div class="row justify-content-center">
+    
+              <div class="col-lg-10">
+    
+                <div class="faq-container">
+    
+                  <!-- pertanyaan 1 -->
+                  <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                    <i class="faq-icon bi bi-question-circle"></i>
+                    <h3>Apa itu MWAUNPHub?</h3>
+                    <div class="faq-content">
+                      <p>MWAUNPHub adalah platform digital yang dirancang untuk mendukung komunikasi, diskusi, dan kolaborasi akademik antara Mahasiswa, Dosen, dan Civitas Akademika Universitas Negeri Padang (UNP). Platform ini menjadi pusat informasi, forum diskusi, manajemen tugas, serta sarana pengaduan dan feedback terkait kebijakan kampus.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                  <!-- pertanyaan2 -->
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <i class="faq-icon bi bi-question-circle"></i>
+                    <h3>Siapa saja yang dapat menggunakan MWAUNPHub?</h3>
+                    <div class="faq-content">
+                      <p>MWAUNPHub dapat digunakan oleh mahasiswa, dosen, staf akademik, serta anggota Majelis Wali Amanat (MWA) UNP. Setiap pengguna dapat mengakses fitur sesuai dengan perannya, seperti mengikuti forum diskusi, memberikan masukan, atau mengelola tugas akademik.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <i class="faq-icon bi bi-question-circle"></i>
+                    <h3>Bagaimana cara bergabung dan menggunakan platform ini?</h3>
+                    <div class="faq-content">
+                      <p>Pengguna dapat mengakses MWAUNPHub melalui <a href="mwaunp-hub.vercel.app">mwaunp-hub.vercel.app</a> dan melakukan login menggunakan akun mahasiswa atau staf UNP. Setelah masuk, pengguna dapat menjelajahi fitur yang tersedia, seperti membaca pengumuman, bergabung dalam forum, atau mengajukan pengaduan.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <i class="faq-icon bi bi-question-circle"></i>
+                    <h3>Apakah forum diskusi di MWAUNPHub bersifat terbuka untuk semua mahasiswa?</h3>
+                    <div class="faq-content">
+                      <p>Ya, forum diskusi dapat diakses oleh semua mahasiswa, tetapi beberapa kategori diskusi mungkin memiliki pembatasan berdasarkan peran atau topik tertentu. Misalnya, diskusi tentang kebijakan akademik mungkin hanya dapat diikuti oleh mahasiswa tingkat tertentu atau dosen.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                  <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <i class="faq-icon bi bi-question-circle"></i>
+                    <h3>Bagaimana cara mengajukan pengaduan atau saran melalui MWAUNPHub?</h3>
+                    <div class="faq-content">
+                      <p>Pengguna dapat mengakses menu "Pengaduan", mengisi formulir pengaduan, dan memilih kategori yang sesuai (misalnya: fasilitas kampus, administrasi, layanan akademik). Setelah dikirim, pengguna dapat memantau status pengaduan dan menerima notifikasi jika ada pembaruan dari pihak kampus.</p>
+                    </div>
+                    <i class="faq-toggle bi bi-chevron-right"></i>
+                  </div><!-- End Faq item-->
+    
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+      </section><!-- /Faq Section -->
+
+  </main>
+
+  <!-- footer-section -->
+  <footer id="footer" class="footer dark-background">
+
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">MWAUNPHub</span>
+            </a>
+            <p>MWAUNPHub adalah platform komunikasi dan kolaborasi akademik bagi mahasiswa, dosen, dan civitas akademika Universitas Negeri Padang.</p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-links d-none d-lg-block">
+            <h4>Menu</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Forum Diskusi</a></li>
+              <li><a href="#">Tugas</a></li>
+              <li><a href="#">Survey</a></li>
+              <li><a href="#">Pengaduan</a></li>
+              <li><a href="#">Profil</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4 class="d-none d-lg-block">Hubungi Kami</h4>
+
+            <p>Gedung Rectorate and Research Center Universitas Negeri Padang</p>
+            <p>Jalan Prof. Dr. Hamka, Air Tawar Padang, Sumatera Barat</p>
+            <p>Indonesia</p>
+            <p class="mt-4"><strong>Telepon:</strong> <span>0751-7058692</span></p>
+            <p><strong>Email:</strong> <span>kerjasama@unp.ac.id</span></p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">MWAUNPHub</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <a href="https://bootstrapmade.com/">2025</a>
+        </div>
+      </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
