@@ -1854,6 +1854,46 @@ section,
 }
 
 
+/*--------------------------------------------------------------
+# tugas data Section
+--------------------------------------------------------------*/
+.konten-tugas {
+  height: 600px; /* Atur tinggi tetap */
+  overflow: auto; /* Scroll jika kontennya lebih panjang */
+  margin-bottom: 50px;
+}
+
+.board {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+/* Styling setiap column */
+.column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Tambahkan border di setiap card */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+  .board {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .column {
+      width: 90%;
+      margin-bottom: 15px; /* Beri jarak antar card */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section

@@ -101,105 +101,310 @@
       </div>
     </div><!-- End Page Title -->
 
-    <!-- main kontent -->
-     <!-- title kek navbar -->
-     <div class="container mt-4 titleTask">
-      <div class="card w-100">
-          <div class="card-body d-flex justify-content-between align-items-center">
+    <!-- main-konten -->
+    <div class="konten-tugas">
+      
+       <!-- konten-tugas1 -->
+      <div class="container mt-4">
+        <div class="card">
+           <!-- Judul dengan tombol toggle dan dropdown -->
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="mb-0">Analisis Sastra Postmodern: Tema dan Teknik Naratif</h5>
               
-              <!-- Nama Grup + Dropdown -->
-              <div class="d-flex align-items-center gap-2">
-                  <h5 class="mb-0">Projek Kampus - Kelompok 7</h5>
-  
-                  <!-- Dropdown hanya ikon panah -->
-                  <div class="dropdown">
-                      <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="dropdown">
-                          <i class="bi bi-chevron-down"></i>
+              <div class="d-flex">
+                  <!-- Dropdown Nama Orang -->
+                  <div class="dropdown me-2">
+                      <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="dropdownNama" data-bs-toggle="dropdown" aria-expanded="false">
+                          Anggota
                       </button>
-                      <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Mahasiswa-A</a></li>
-                          <li><a class="dropdown-item" href="#">Mahasiswa-B</a></li>
-                          <li><a class="dropdown-item" href="#">Mahasiswa-C</a></li>
-                          <li><a class="dropdown-item" href="#">Mahasiswa-D</a></li>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownNama">
+                          <li><a class="dropdown-item" href="#">Fadhil</a></li>
+                          <li><a class="dropdown-item" href="#">Rina</a></li>
+                          <li><a class="dropdown-item" href="#">Dian</a></li>
+                          <li><a class="dropdown-item" href="#">Budi</a></li>
+                          <li><a class="dropdown-item" href="#">Siti</a></li>
+                          <li><a class="dropdown-item" href="#">Carmen</a></li>
                       </ul>
                   </div>
+
+                  <!-- Tombol Toggle -->
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#taskBoard1">
+                      <i class="bi bi-chevron-down"></i>
+                  </button>
               </div>
-  
-              <!-- Tombol Share -->
-              <button class="btn btn-primary">
-                  <i class="bi bi-send"></i> Share
-              </button>
-          </div>
-      </div>
-  </div>
+            </div>
 
-    <!-- mirip trello -->
-      <div class="container-fluid">
-        <div class="board">
-    
-            <!-- Add Task Column -->
-            <div class="column">
-                <h5>Add New Task</h5>
-                <input type="text" class="form-control mb-2" placeholder="Task Title">
-                <button class="btn btn-primary w-100">Add Task</button>
+      
+            <!-- Konten Trello-style -->
+            <div id="taskBoard1" class="collapse show">
+                <div class="card-body">
+                    <div class="board">
+                        <!-- Add Task Column -->
+                        <div class="column">
+                            <h5>Tambahkan Tugas Baru</h5>
+                            <input type="text" class="form-control mb-2" placeholder="Judul Tugas">
+                            <button class="btn btn-primary w-100">Tambah Tugas</button>
+                        </div>
+      
+                        <!-- Plan Column -->
+                        <div class="column">
+                            <h5>Rencana</h5>
+                            <div class="task">
+                                <strong>Mengumpulkan Referensi Buku dan Jurnal</strong>
+                                <p class="text-muted">Fadhil - 10 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Studi Literatur tentang Tema Postmodern</strong>
+                                <p class="text-muted">Rina - 12 Maret</p>
+                                <img src="assets/img/studi_literatur.jpg" class="img-fluid mt-2" alt="Tema Postmodern">
+                            </div>
+                        </div>
+      
+                        <!-- In Progress Column -->
+                        <div class="column">
+                            <h5>Sedang Berjalan</h5>
+                            <div class="task">
+                                <strong>Menganalisis Teknik Naratif dalam Karya Postmodern</strong>
+                                <p class="text-muted">Dian - 8 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Membandingkan Karya Pramoedya dengan Sastra Postmodern</strong>
+                                <p class="text-muted">Budi - 9 Maret</p>
+                            </div>
+                        </div>
+      
+                        <!-- Completed Column -->
+                        <div class="column">
+                            <h5>Selesai</h5>
+                            <div class="task">
+                                <strong>Ringkasan Jurnal tentang Teknik Dekonstruksi</strong>
+                                <p class="text-muted">Siti - 5 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Wawancara dengan Dosen Sastra</strong>
+                                <p class="text-muted">Andi - 6 Maret</p>
+                            </div>
+                        </div>
+      
+                        <!-- Issues Column -->
+                        <div class="column">
+                            <h5>Kendala</h5>
+                            <div class="task">
+                                <strong>Kesulitan dalam Memahami Dekonstruksi Derrida</strong>
+                                <p class="text-muted">Wahyu - 7 Maret</p>
+                                <img src="assets/img/kendala1.jpg" class="img-fluid mt-2" alt="Jacques Derrida">
+                            </div>
+                            <div class="task">
+                                <strong>Keterbatasan Sumber tentang Sastra Postmodern Indonesia</strong>
+                                <p class="text-muted">Carmen - 8 Maret</p>
+                            </div>
+                        </div>
+                    </div> <!-- End Board -->
+                </div>
             </div>
-    
-            <!-- Plan Column -->
-            <div class="column">
-                <h5>Plan</h5>
-                <div class="task">
-                    <strong>Membuat Proposal PKM</strong>
-                    <p class="text-muted">Fadhil - 10 Maret</p>
-                </div>
-                <div class="task">
-                    <strong>Riset tentang Algoritma TDOA</strong>
-                    <p class="text-muted">Rina - 12 Maret</p>
-                </div>
-            </div>
-    
-            <!-- In Progress Column -->
-            <div class="column">
-                <h5>In Progress</h5>
-                <div class="task">
-                    <strong>Pengujian Sensor Suara</strong>
-                    <p class="text-muted">Dian - 8 Maret</p>
-                </div>
-                <div class="task">
-                    <strong>Pembuatan UI Aplikasi</strong>
-                    <p class="text-muted">Budi - 9 Maret</p>
-                </div>
-            </div>
-    
-            <!-- Completed Column -->
-            <div class="column">
-                <h5>Completed</h5>
-                <div class="task">
-                    <strong>Instalasi Server AWS</strong>
-                    <p class="text-muted">Siti - 5 Maret</p>
-                </div>
-                <div class="task">
-                    <strong>Penulisan Laporan Progress</strong>
-                    <p class="text-muted">Andi - 6 Maret</p>
-                </div>
-            </div>
-    
-            <!-- Issues Column -->
-            <div class="column">
-                <h5>Issues</h5>
-                <div class="task">
-                    <strong>Koneksi Sensor Tidak Stabil</strong>
-                    <p class="text-muted">Wahyu - 7 Maret</p>
-                </div>
-                <div class="task">
-                    <strong>Kesalahan Pengolahan Data</strong>
-                    <p class="text-muted">Maya - 8 Maret</p>
-                </div>
-            </div>
-    
         </div>
-    </div>
-    <!-- End main kontent -->
+      </div>
+      <!-- konten-tugas2 -->
+      <div class="container mt-4">
+        <div class="card">
+            <!-- Judul dengan tombol toggle dan dropdown -->
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="mb-0">Analisis Sastra Postmodern: Tema dan Teknik Naratif</h5>
+              
+              <div class="d-flex">
+                  <!-- Dropdown Nama Orang -->
+                  <div class="dropdown me-2">
+                      <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="dropdownNama" data-bs-toggle="dropdown" aria-expanded="false">
+                          Anggota
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownNama">
+                          <li><a class="dropdown-item" href="#">Fadhil</a></li>
+                          <li><a class="dropdown-item" href="#">Rina</a></li>
+                          <li><a class="dropdown-item" href="#">Dian</a></li>
+                          <li><a class="dropdown-item" href="#">Budi</a></li>
+                          <li><a class="dropdown-item" href="#">Siti</a></li>
+                          <li><a class="dropdown-item" href="#">Carmen</a></li>
+                      </ul>
+                  </div>
 
+                  <!-- Tombol Toggle -->
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#taskBoard2">
+                      <i class="bi bi-chevron-down"></i>
+                  </button>
+              </div>
+            </div>
+
+      
+            <!-- Konten Trello-style -->
+            <div id="taskBoard2" class="collapse show">
+                <div class="card-body">
+                    <div class="board">
+                        <!-- Add Task Column -->
+                        <div class="column">
+                            <h5>Tambahkan Tugas Baru</h5>
+                            <input type="text" class="form-control mb-2" placeholder="Judul Tugas">
+                            <button class="btn btn-primary w-100">Tambah Tugas</button>
+                        </div>
+      
+                        <!-- Plan Column -->
+                        <div class="column">
+                            <h5>Rencana</h5>
+                            <div class="task">
+                                <strong>Mengumpulkan Karya Pramoedya</strong>
+                                <p class="text-muted">Fadhil - 15 Maret</p>
+                                <img src="assets/img/pramudiya.jpg" class="img-fluid mt-2" alt="Dokumentasi buku Pramoedya">
+                            </div>
+                            <div class="task">
+                                <strong>Menganalisis Latar Sejarah dalam Novel</strong>
+                                <p class="text-muted">Rina - 18 Maret</p>
+                            </div>
+                        </div>
+      
+                        <!-- In Progress Column -->
+                        <div class="column">
+                            <h5>Sedang Berlangsung</h5>
+                            <div class="task">
+                                <strong>Membandingkan dengan Literatur Sejarah</strong>
+                                <p class="text-muted">Dian - 20 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Menulis Bab Pendahuluan</strong>
+                                <p class="text-muted">Budi - 22 Maret</p>
+                            </div>
+                        </div>
+      
+                        <!-- Completed Column -->
+                        <div class="column">
+                            <h5>Hasil</h5>
+                            <div class="task">
+                                <strong>Review Kritis Novel Bumi Manusia</strong>
+                                <p class="text-muted">Siti - 25 Maret</p>
+                                <img src="assets/img/bumi_manusia.jpg" class="img-fluid mt-2" alt="Cuplikan novel Bumi Manusia">
+                            </div>
+                            <div class="task">
+                                <strong>Diskusi dengan Dosen Pembimbing</strong>
+                                <p class="text-muted">Andi - 28 Maret</p>
+                            </div>
+                        </div>
+      
+                        <!-- Issues Column -->
+                        <div class="column">
+                            <h5>Kendala</h5>
+                            <div class="task">
+                                <strong>Keterbatasan Akses ke Arsip Sejarah</strong>
+                                <p class="text-muted">Wahyu - 30 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Kesulitan dalam Menentukan Sumber Primer</strong>
+                                <p class="text-muted">Carmen - 2 April</p>
+                            </div>
+                        </div>
+                    </div> <!-- End Board -->
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- konten-tugas3 -->
+      <div class="container mt-4">
+        <div class="card">
+           <!-- Judul dengan tombol toggle dan dropdown -->
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="mb-0">Analisis Sastra Postmodern: Tema dan Teknik Naratif</h5>
+              
+              <div class="d-flex">
+                  <!-- Dropdown Nama Orang -->
+                  <div class="dropdown me-2">
+                      <button class="btn btn-outline-primary btn-sm dropdown-toggle" type="button" id="dropdownNama" data-bs-toggle="dropdown" aria-expanded="false">
+                          Pilih Nama
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownNama">
+                          <li><a class="dropdown-item" href="#">Fadhil</a></li>
+                          <li><a class="dropdown-item" href="#">Rina</a></li>
+                          <li><a class="dropdown-item" href="#">Dian</a></li>
+                          <li><a class="dropdown-item" href="#">Budi</a></li>
+                          <li><a class="dropdown-item" href="#">Siti</a></li>
+                          <li><a class="dropdown-item" href="#">Carmen</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Tombol Toggle -->
+                  <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#taskBoard3">
+                      <i class="bi bi-chevron-down"></i>
+                  </button>
+              </div>
+            </div>
+
+      
+            <!-- Konten Trello-style -->
+            <div id="taskBoard3" class="collapse show">
+                <div class="card-body">
+                    <div class="board">
+                        <!-- Add Task Column -->
+                        <div class="column">
+                            <h5>Tambahkan Tugas Baru</h5>
+                            <input type="text" class="form-control mb-2" placeholder="Judul Tugas">
+                            <button class="btn btn-primary w-100">Tambah Tugas</button>
+                        </div>
+      
+                        <!-- Plan Column -->
+                        <div class="column">
+                            <h5>Rencana</h5>
+                            <div class="task">
+                                <strong>Mengumpulkan Literatur tentang Identitas</strong>
+                                <p class="text-muted">Fadhil - 15 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Menganalisis Konsep Identitas dalam Sastra</strong>
+                                <p class="text-muted">Rina - 18 Maret</p>
+                                <img src="assets/img/analisi.jpg" class="img-fluid mt-2" alt="Analisis Identitas dalam Sastra">
+                            </div>
+                        </div>
+      
+                        <!-- In Progress Column -->
+                        <div class="column">
+                            <h5>Sedang Berlangsung</h5>
+                            <div class="task">
+                                <strong>Membandingkan Identitas dalam Karya Sastra</strong>
+                                <p class="text-muted">Dian - 20 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Menulis Bab Teori Identitas</strong>
+                                <p class="text-muted">Budi - 22 Maret</p>
+                            </div>
+                        </div>
+      
+                        <!-- Completed Column -->
+                        <div class="column">
+                            <h5>Hasil</h5>
+                            <div class="task">
+                                <strong>Analisis Identitas dalam Novel Kontemporer</strong>
+                                <p class="text-muted">Siti - 25 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Diskusi dengan Dosen Pembimbing</strong>
+                                <p class="text-muted">Andi - 28 Maret</p>
+                                <img src="assets/img/bimbingan.jpg" class="img-fluid mt-2" alt="Diskusi Akademik">
+                            </div>
+                        </div>
+      
+                        <!-- Issues Column -->
+                        <div class="column">
+                            <h5>Kendala</h5>
+                            <div class="task">
+                                <strong>Keterbatasan Referensi tentang Identitas</strong>
+                                <p class="text-muted">Wahyu - 30 Maret</p>
+                            </div>
+                            <div class="task">
+                                <strong>Interpretasi yang Beragam tentang Konsep Identitas</strong>
+                                <p class="text-muted">Maya - 2 April</p>
+                            </div>
+                        </div>
+                    </div> <!-- End Board -->
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
 
       <!-- komentar Section -->
       <section id="testimonials" class="testimonials section dark-background">
