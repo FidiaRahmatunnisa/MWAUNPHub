@@ -34,7 +34,7 @@
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0d42ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #3B5998 ; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -420,7 +420,8 @@ h6 {
   .navmenu ul {
     display: none;
     list-style: none;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed; /* Supaya tetap di tengah saat scrolling */
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
@@ -430,6 +431,22 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Biar tidak terlalu lebar */
+    text-align: center; /* Membuat teks menu berada di tengah */
+  }
+
+   .navmenu ul li {
+    display: flex;
+    justify-content: center; /* Posisikan setiap item menu di tengah */
+    justify-content: center; /* Menengahkan konten horizontal */
+  }
+
+  .navmenu ul li:not(:last-child) {
+    border-bottom: 3px solid #F2A007; /* Warna & Ketebalan Garis */
+    width: 25%; /* Supaya tidak sampai ke ujung */
+    margin: 0 auto; /* Pusatkan secara horizontal */
+    /* display: block; Agar width bisa diterapkan */
+    padding-bottom: 5px; /* Jarak antara teks dan garis */
   }
 
   .navmenu a,
@@ -478,27 +495,6 @@ h6 {
     background-color: var(--accent-color);
     color: var(--contrast-color);
     transform: rotate(180deg);
-  }
-
-  .navmenu .dropdown ul {
-    position: static;
-    display: none;
-    z-index: 99;
-    padding: 10px 0;
-    margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
-  }
-
-  .navmenu .dropdown>.dropdown-active {
-    display: block;
-    background-color: rgba(33, 37, 41, 0.03);
   }
 
   .mobile-nav-active {
