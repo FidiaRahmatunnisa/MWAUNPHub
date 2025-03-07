@@ -942,6 +942,10 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about {
+  margin-top: 50px; 
+}
+
 .about .about-img-container {
   width: 600px; /* Atur lebar tetap */
   height: 400px; /* Atur tinggi tetap agar tetap berbentuk kotak */
