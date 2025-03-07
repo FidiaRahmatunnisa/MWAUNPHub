@@ -970,8 +970,6 @@ section,
   }
 }
 
-
-
 .about .content h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -979,6 +977,8 @@ section,
 
 .about .content p {
   margin-top: 30px;
+  align-items: center;
+  text-align: justify;
 }
 
 .about .content ul {
