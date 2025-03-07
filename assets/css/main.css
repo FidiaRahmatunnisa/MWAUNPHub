@@ -1572,6 +1572,13 @@ section,
   }
 }
 
+@media (max-width: 991px) { /* Berlaku untuk tablet dan mobile */
+  .pagpag {
+      max-width: 100% !important;
+  }
+}
+
+
 .team .pageText {
   color: rgba(0, 0, 0, 0.5);
   font-size: 14px;
