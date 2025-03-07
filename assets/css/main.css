@@ -1158,6 +1158,11 @@ section,
   .features .features-item+.features-item {
     margin-top: 40px;
   }
+  .features .features-item h3 {
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+  }
 }
 
 .features .features-item h3 {
@@ -1193,6 +1198,7 @@ section,
 .features .features-item p {
   text-align: justify;
 }
+
 
 
 /*--------------------------------------------------------------
