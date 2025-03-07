@@ -970,16 +970,15 @@ section,
   }
 }
 
+
+
 .about .content h3 {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.about .title {
-  font-size: 25px;
-  font-weight: bold; 
-  color: #012549; /* Warna dark-biru unp */
-  margin: 15px auto; 
+.about .content p {
+  margin-top: 30px;
 }
 
 .about .content ul {
