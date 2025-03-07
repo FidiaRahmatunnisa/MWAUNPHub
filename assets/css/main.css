@@ -809,6 +809,12 @@ h6 {
   margin-bottom: 10px;
 }
 
+.page-title p {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+}
+
 .page-title .breadcrumbs ol {
   display: flex;
   flex-wrap: wrap;
@@ -1531,6 +1537,14 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+
+.team .card-text {
+  color: rgba(0, 0, 0, 0.7); /* Hitam dengan 70% opacity */
+  text-align: justify;
+  text-justify: inter-word; /* Memastikan teks diratakan dengan baik */
+  font-size: 16px;
+}
+
 .team .member {
   background-color: var(--surface-color);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -1538,8 +1552,49 @@ section,
   margin-bottom: 20px;
 }
 
-.team .member img {
+.team img {
   margin: -1px -1px 30px -1px;
+  width: 100%;
+  height: 250px;
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+.team .imageDetail {
+  height: 900px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px){
+  .team .imageDetail {
+    height: 400px;
+    margin-top: 20px;
+  }
+}
+
+.team .pageText {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.team .rowPag {
+  margin-bottom: 30px;
+}
+
+@media (max-width:768px){
+  .team .rowPag {
+    margin-bottom: 20px;
+  }
+  .team .pageText {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.team .komenPag {
+  height: 500px;
 }
 
 .team .member .member-content {
