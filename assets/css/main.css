@@ -1853,6 +1853,30 @@ section,
   background-color: #BB0000;
 }
 
+/*--------------------------------------------------------------
+# survey data Section
+--------------------------------------------------------------*/
+#pieChart {
+  max-width: 250px;  /* Atur ukuran pie chart */
+  max-height: 250px;
+  margin: auto; /* Agar tetap di tengah */
+  display: block;
+}
+
+.survey-item img {
+  width: 120px;  /* Atur lebar gambar */
+  height: 120px; /* Atur tinggi gambar */
+  object-fit: cover; /* Agar gambar tetap proporsional tanpa terdistorsi */
+}
+
+@media (max-width:768px){
+  .survey-item img {
+    width: 200px;  /* Atur lebar gambar */
+    height: 200px; /* Atur tinggi gambar */
+    object-fit: cover; /* Agar gambar tetap proporsional tanpa terdistorsi */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # tugas data Section
